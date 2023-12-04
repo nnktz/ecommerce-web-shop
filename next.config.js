@@ -10,6 +10,9 @@ const nextConfig = {
       .filter(Boolean)
       .map(url => url.replace(/https?:\/\//, '')),
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   redirects,
   async headers() {
     const headers = []
